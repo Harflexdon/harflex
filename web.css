@@ -1,0 +1,132 @@
+body {
+	background: linear-gradient(-45deg, #e9ee52, #fc3e87, #06f28c, #23d5ab, #3A5311, orange, brown, grey);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    border: 100px;
+}
+
+.title {
+    border: #06f28c;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    padding: 2%;
+    text-decoration:solid;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    padding: 5px;
+    background: #030503;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 70;
+}
+.logo {
+    height: 80px;
+    width: 80px;
+    border: 5px solid;
+    color: rgb(0, 255, 42);
+}  
+ 
+#title-me {
+    align-items: center;
+    border: #06f28c;
+    animation-name: red-to-black;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-composition: forward;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    text-decoration: dotted;
+    text-decoration: dotted;
+}
+
+fieldset{
+background-color: rgb(5, 83, 42);
+}
+
+center {
+
+}
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: beige;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.img {
+    height: 300px;
+    width: 200px;
+    margin-left: 20px;
+    padding: auto;
+    align-items: center;
+    border: 10px solid rgb(0, 255, 42);
+    float:none;
+}
+
+@keyframes gradient{
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes red-to-black {
+	0% {
+		background: rgb(0, 255, 42);
+        transform: translate(0px, 0px);
+	}
+	20% {
+		background: rgb(229, 18, 11);
+        transform: translate(10px, 10px);
+	}
+    40% {
+    background: orange;
+    transform: translate(20px, 20px);
+    }
+    60%{
+        background: purple;
+        transform: translate(30px, 30px);
+    }
+
+    80%{
+        background:gold;
+        transform: translate(40px, 40px);
+    }
+    100%{
+        background: greenyellow;
+        transform: translate(50px, 50px);
+    }
+    120%{
+        background: lime;
+        transform: translate(60px, 60px);
+    }
+    140%{
+        background: #E34A27;
+        transform: translate(80px, 80px);
+    }
+    160%{
+        background: #FFEF00;
+        transform: translate(100px, 100px);
+    }
+    180%{
+        background: #ce0e57;
+        transform: translate(120px, 120px);
+    }
+    200%{
+        background: #c8ce0e;
+        transform: translate(140px, 140px);
+    }
+}
